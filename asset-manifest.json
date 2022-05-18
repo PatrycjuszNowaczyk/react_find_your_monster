@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react_find_your_monster/static/css/main.d98b3de7.css",
+    "main.js": "/react_find_your_monster/static/js/main.6d12bcc2.js",
+    "index.html": "/react_find_your_monster/index.html",
+    "main.d98b3de7.css.map": "/react_find_your_monster/static/css/main.d98b3de7.css.map",
+    "main.6d12bcc2.js.map": "/react_find_your_monster/static/js/main.6d12bcc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d98b3de7.css",
+    "static/js/main.6d12bcc2.js"
+  ]
+}
