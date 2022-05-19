@@ -6,10 +6,12 @@ export default class Increment extends Component {
     this.state = {
       count: 0,
       name: "Patrycjusz",
-      city: "Poznań"
+      city: "Poznań",
     };
+    this.handleClick3 = this.handleClick.bind(this);
   }
-  handleClick = (e) => {
+  handleClick2 = (e) => {
+    console.log(this);
     if (e.target.name === "increment") {
       this.setState(
         (prevState) => ({
@@ -22,12 +24,32 @@ export default class Increment extends Component {
       return;
     }
     if (e.target.name === "decrement") {
-      this.setState({count: this.state.count - 1}, () => {
-          console.log(this);
-        });
+      this.setState({ count: this.state.count - 1 }, () => {
+        console.log(this.state);
+      });
       return;
     }
   };
+  handleClick(e) {
+    console.log(this);
+    if (e.target.name === "increment") {
+      this.setState(
+        (prevState) => ({
+          count: prevState.count + 1,
+        }),
+        () => {
+          console.log(this.state);
+        }
+      );
+      return;
+    }
+    if (e.target.name === "decrement") {
+      this.setState({ count: this.state.count - 1 }, () => {
+        console.log(this.state);
+      });
+      return;
+    }
+  }
   render() {
     const { count } = this.state;
     return (
@@ -37,14 +59,14 @@ export default class Increment extends Component {
         </h1>
         <button
           className="bg-slate-800 hover:bg-lime-800 text-white p-4 rounded-lg mx-2"
-          onClick={this.handleClick}
+          onClick={this.handleClick3}
           name="increment"
         >
           {this.props.name}
         </button>
         <button
           className="bg-slate-800 hover:bg-lime-800 text-white p-4 rounded-lg mx-2"
-          onClick={this.handleClick}
+          onClick={this.handleClick2}
           name="decrement"
         >
           decrement button
