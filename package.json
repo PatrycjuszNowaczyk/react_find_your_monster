@@ -2,7 +2,7 @@
   "name": "react-monsters",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://patrycjusznowaczyk.github.io/react_find_your_monster",
+  "homepage": "https://patrycjusznowaczyk.github.io/react_find_your_monster/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",
