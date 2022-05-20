@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.scss";
 import Header from "./components/Header/Header";
 import CardList from "./components/CardList/CardList";
-
+import Lifecycles from "./components/Lifecycles/Lifecycles";
 export default class App extends Component {
   constructor() {
     super();
@@ -29,6 +29,7 @@ export default class App extends Component {
           }}
         />
         <CardList monsters={filteredMonsters} />
+        <Lifecycles />
       </React.StrictMode>
     );
   }
