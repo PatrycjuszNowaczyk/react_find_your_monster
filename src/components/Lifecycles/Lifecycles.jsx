@@ -12,7 +12,7 @@ export default class Lifecycles extends Component {
   handleOnClick = (e) => {
     if (e.target.name === "toggleChild") {
       this.setState(state => {
-            return Object.assign({displayChild: !state.displayChild}, !state.displayChild ? state.text : {text: ""});
+            return Object.assign({displayChild: !state.displayChild}, !state.displayChild ? state.text : {text: "initial text"});
       });
     } else if (e.target.name === "addText") {
       this.setState({ text: this.state.text + " added text" });
